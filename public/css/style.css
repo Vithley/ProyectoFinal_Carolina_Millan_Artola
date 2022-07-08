@@ -1,0 +1,1991 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+.central {
+    background-color: #fff;
+}
+
+.index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fff;
+}
+
+.barra {
+    
+    background-color: #4eb1ad;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.barra ion-icon {
+    color: #fff;
+}
+
+.text-icons {
+    display: flex;
+    align-items: center;
+}
+
+.text-icons h5 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: #fff;
+}
+.text-icons a {
+    padding: 0 5px;
+}
+
+.icons-barra a{
+   padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 3px;
+    
+}
+
+.nav-links{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+.nav-links a {
+    padding: 10px 20px;
+    color: #4eb1ad;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.nav-links li {
+    list-style: none;
+    position: relative;
+    
+}
+
+.nav-links li .resaltar {
+    padding: 1px 5px;
+    border-bottom: #b6075f;
+}
+
+.nav-links li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #B6075F;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.nav-links li:hover::before {
+    width: 100%;
+
+}
+
+.nav-links .inicio {
+    border: 1px solid #4eb1ad;
+    border-radius: 10px;
+    background-color: #4eb1ad;
+    color: #fff;
+}
+
+.menu-burger {
+    display: none;
+    cursor: pointer;
+
+}
+
+.menu-burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #4eb1ad;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .body {
+        overflow: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 22vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+/*Estilos del cuerpo de la página*/
+.body-menu{
+    background-image: url('../images/nino.png');
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    top: 0;
+}
+
+.consiste {
+    width: 100%;
+    height: 80%;
+    margin-top: 80px;
+    margin-bottom: 200;
+    display: flex;
+    background-color: white;
+}
+
+.consiste-logopedia h2{
+    font-size: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.consiste-logopedia {
+    background-color: #4eb1ad;
+    width: 5000px;
+    height: 500px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.parr-consiste {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.parr-consiste p {
+    font-size: 25px;
+    text-align: justify;
+    margin: 0px 60px 0px 0px;
+    color: grey;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.beneficios {
+    width: 100%;
+    height: 80%;
+    margin-top: 80px;
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.parr-ben {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.parr-ben li {
+    font-size: 25px;
+    text-align: justify;
+    margin: 0px 60px 0px 0px;
+    color: grey;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.benef-logopedia {
+    background-color: #4eb1ad;
+    width: 1800px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.benef-logopedia h2 {
+    font-size: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.index-photo {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.body-menu .banner{
+    max-width: 800px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-menu .banner .teraphy {
+   margin-top: auto;
+}
+
+.body-menu .banner .teraphy h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.body-menu .banner .teraphy h1 {
+    color: #fff;
+    font-size: 54px;
+    letter-spacing: 0.25em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.full-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1;
+}
+
+.consiste {
+    display: flex;
+}
+
+.beneficios {
+ display: flex;
+ justify-content: flex-end;
+ padding-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .body-menu {
+        overflow: hidden;
+    }
+}
+
+/*Estilos del submenu*/
+
+.lineal {
+    border-top: 15px solid #fddfee;
+    margin-bottom: 40px;
+    background-color: #fddfee;
+}
+
+.container-galery{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.container-galery .pack {
+    width: 27%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.pack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(143, 140, 139, 0.781);
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay a {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+}
+
+.pack:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .container-galery {
+       width: 95%; 
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container-galery {
+       width: 90%; 
+    }
+
+    .container-galery .pack {
+        width: 48%;
+    }
+}
+
+/*Estilo apartados iconos*/
+.galery {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.icons-galery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icons {
+    text-align: center;
+    align-items: center;
+}
+
+.icons h2 {
+    padding-top: 30px;
+    text-align: center;
+    color: grey;
+    font-size: 32px;
+}
+
+.icons p {
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 20px;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.icons a img {
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+.icons a img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in; 
+}
+
+.frase {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #2d6769;
+    align-items: center;
+    
+}
+
+.frase p {
+    font-size: 40px;
+    font-family: 'Send Flowers', cursive;
+    text-align: center;
+    color: white;
+   
+}
+
+.video-index {
+    margin-top: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.imagen-final {
+    background-color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+.imagen-final:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in;
+}
+
+/*Estilos para session.php*/
+
+
+/*Formulario login*/
+
+.line {
+    border-bottom: 2px solid #4eb1ad;  
+}
+
+.login {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: url("../images/fondo1.png");
+}
+
+.box {
+    width: 370px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    border-radius: 10px;
+    
+   
+}
+
+.toggle-btn {
+    padding: 40px 22px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+
+.input-group {
+    top: 120px;
+    position: absolute;
+    width: 400px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #fddfee;
+    outline: none;
+    background: transparent;
+    font-weight: 800;
+}
+
+
+.submit-btn {
+    width: 75%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: auto;
+    background: #4eb1ad;
+    border: 0px;
+    display: flex;
+    padding-left: 120px;
+    
+    
+}
+
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+.alert {
+    color: red;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+
+/*PÁGINA PACK LOGOPEDIA Y CONSULTAS*/
+
+/*Video con texto*/
+
+.menu-video {
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+}
+
+
+#main{
+    position: relative;
+}
+
+.video-container{
+    position: relative;
+    height: 500px;
+    
+}
+
+.videoss{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+}
+
+.video-pack {
+    margin: auto;
+    margin-bottom:0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-overlay-consulta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: 0.50;
+}
+
+
+.video-content-container{
+    width: 100%;
+    margin: auto;
+    background-color: #fddfee;
+    color: grey;
+    
+}
+
+.video-content-container-consultas {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(78, 177, 173);
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.video-content{
+    width: 50%;
+}
+
+.text-overvideo { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.text-overvideo-consultas{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.text-content-consultas {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    justify-content: left;
+}
+
+.text-overvideo h1 strong{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size:38px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.text-overvideo-consultas h1 strong{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.text-content {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    justify-content: left;
+}
+
+.text-content p {
+    margin-top: 30px;
+}
+
+
+
+/*Packs de logopedia y Consultas*/
+
+.table-packs {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 90px 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+  
+}
+
+.packs {
+    background-color: #fff;
+    width: 450px;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 9px 15px rgba(67, 114, 121, 0.507);
+    -moz-box-shadow: 0px 3px 9px 15px rgba(67, 114, 121, 0.507);
+    box-shadow: 0px 3px 9px 15px rgba(67, 114, 121, 0.507);
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+}
+
+.packs:hover {
+    transform: scale(1.05);
+}
+
+.pack-titulo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #dd6094;
+    padding: 15px 0;
+}
+
+
+.pack-titulo img {
+    margin-bottom: 10px;
+
+}
+
+.pack-titulo h4 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 15px;
+}
+
+.pack-titulo1 h4 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
+}
+
+.pack-titulo1 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4be56;
+    padding: 15px;
+}
+
+.pack-titulo1 img {
+    margin-bottom: 10px;
+
+}
+
+.image1 img{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.pack-list ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(192, 93, 142, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pack-list-consulta ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(192, 93, 142, 0.5);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.espacio {
+    padding: 0 0 60px 0;
+}
+
+.espacio-boton {
+    padding: 0 0 210px 0;
+}
+
+.espacio-boton-cons {
+    padding: 0 0 70px 0;
+}
+
+
+.list-pack1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.list-pack2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.enlace-price a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #99eeff;
+    margin: 40px 0;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #1a5e60;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.include-text p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    padding: 40px 10px;
+} 
+
+.include-list ul li {
+    text-align: left;
+    padding: 10px 5px 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+
+    .videos{
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .packs {
+        width: 225px;
+    }
+
+    .pack-titulo img{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .pack-titulo1 img {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .pack-titulo h4 {
+        font-size: 28px;
+    }
+
+    .pack-titulo1 h4 {
+        font-size: 28px;
+    }
+
+    .enlace-price a {
+        margin: 20px 0;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .enlace-price a:hover {
+        transform: scale(1.05);
+    }
+
+    .packs:hover {
+        transform: none;
+    }
+}
+
+/*Estilos de Página Pack Premium*/
+.body-menu-pack{
+    background-image: url('../images/mujerNina.png');
+    background-attachment: fixed;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    z-index: 1;
+}
+
+.body-menu-pack .banner{
+    max-width: 800px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.body-menu-pack .banner .teraphy {
+   margin-top: auto;
+}
+
+.body-menu-pack .banner .teraphy h2 {
+    color: #fddfee;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    z-index: 2;
+}
+
+.body-menu-pack .banner .teraphy h1 {
+    color: #fddfee;
+    font-size: 54px;
+    letter-spacing: 0.25em;
+    margin-bottom: 110px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.body-menu-pack-flex {
+    background-image: url('../images/nino-beso-oscura.png');
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    z-index: 1;
+}
+
+.body-menu-pack-flex .banner{
+    max-width: 800px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-menu-pack-flex .banner .teraphy {
+   margin-top: auto;
+}
+
+.body-menu-pack-flex .banner .teraphy h2 {
+    color: #fddfee;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    z-index: 2;
+}
+
+.body-menu-pack-flex .banner .teraphy h1 {
+    color: #fddfee;
+    font-size: 54px;
+    letter-spacing: 0.25em;
+    margin-bottom: 110px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    z-index: 2
+}
+
+/*Pagina Pack Premium*/
+
+
+
+.body-packpremium {
+    position: relative;
+    margin-left: 300px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    
+}
+
+.title-cabecera h2 {
+    padding: 30px;
+    color: #B6075F;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.list-premium {
+    background-color: #fff;
+    border-radius: 30px;
+    display: block;
+    width: 50%;
+    padding: 10px 25px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+
+    
+}
+
+.packpremium {
+    display: flex;
+    padding: 10px;
+}
+
+.price-packs {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.reservar {
+    text-align: center;
+}
+
+
+
+.description-pack {
+    padding: 20px 80px;
+    background-image: url(../images/foto3.png);
+}
+
+.paraquien {
+    padding:10px 0;
+    border-bottom: 1px solid gainsboro;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b6075f;
+}
+
+.explicacion {
+    padding: 20px 0;
+}
+
+.explicacion p {
+    padding: 10px 0;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+.tratamos {
+    width: 80%;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.acord-body {
+    background-color: white;
+}
+
+details {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    margin-left: 50px;
+    width: 80%;
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+summary {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-weight: bold;
+}
+
+.list-acordeon h4 {
+    padding: 20px 5px 10px 0;
+}
+
+.list-acordeon li{
+    
+    padding: 5px 30px;
+    list-style: none;
+}
+
+.espacio {
+    padding: 10px;
+}
+
+/*PÁGINA DE CONTACTO*/
+
+.contact__body {
+    background-image: url(../images/fondo2.png);
+     
+}
+
+.contact {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    border-top: 1px solid gainsboro;
+    
+}
+
+
+.contac-body {
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.with-me h4{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #b6075f;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    
+    
+}
+
+.contact-title {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    font-size: 25px;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #b6075f;
+    letter-spacing: 3px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    
+}
+
+.contact-parrafo{
+    color: black;
+    line-height: 24px;
+    margin: 40px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+.contact-parrafo p a {
+    color: #e456cc;
+    font-weight: bold;
+}
+
+.contact-parrf {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+
+.contact-email {
+    margin-bottom: 15px;
+    padding: 80px 0 10px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+.contact-whats {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+.link-mail a {
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link-mail p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 17px;
+    padding: 5px 0;
+    font-weight: bold;
+
+}
+
+.link-whats a {
+    text-decoration: none;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.contact-form {
+   width: 100%;
+   margin-bottom: 15px;
+   padding: 12px 20px;
+   border: 2px solid #99678e;
+   border-radius: 10px;
+   display: block;
+   margin: 80px 20px 10px 80px;
+   -moz-box-shadow: 0px -1px 33px rgb(32, 31, 31);
+   -webkit-box-shadow: 0px -1px 33px rgb(41, 39, 39);
+   box-shadow: 0px -1px 33px rgb(36, 34, 34);
+   font-family: 'Mulish', sans-serif;
+    
+}
+
+.title-form h2{
+    margin: 20px 0 60px 0;
+    color: #B6075F;
+    
+}
+
+.body-contact-form input[type='text'] {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+}
+
+.body-contact-form input[type='date'] {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+}
+
+.body-contact-form input[type='email'] {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+}
+
+.body-contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.body-contact-form label {
+    color: #B6075F;
+    margin-top: 10px;
+}
+
+.body-contact-form button[type='submit'] {
+    background-color: #b6075f;
+    color: #ceedee;
+    width: 200px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.necesitas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.imagen-nec {
+    width: 50%;
+    height: 50%;
+}
+
+.imagen-nec img{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    -moz-box-shadow: 0px -1px 33px rgb(32, 31, 31);
+   -webkit-box-shadow: 0px -1px 33px rgb(41, 39, 39);
+   box-shadow: 0px -1px 33px rgb(36, 34, 34);
+   border-radius: 20px;
+
+}
+
+.text-necesitas {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    padding-right: 200px;
+}
+
+.text-necesitas h2 {
+    margin-bottom: 50px;
+}
+
+.text-necesitas li {
+    margin-bottom: 40px;
+}
+
+.contact-acordeon {
+    width: 90%;
+}
+
+/*PÁGINA DE RESERVAS*/
+
+.reserva__body {
+    background-image: url(../images/fondo2.png);
+     
+}
+
+.reserva {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    border-top: 1px solid gainsboro;
+    
+}
+
+
+.reserva-body {
+    padding-left: 10px;
+    text-align: justify;
+}
+
+
+
+.reserva-title {
+    width: 100%;
+    display: flex;
+    margin: 80px 0;
+    font-size: 25px;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #b6075f;
+    letter-spacing: 3px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    
+}
+
+.with-me-reserva h4{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #b6075f;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    
+    
+}
+
+.reserva-parrafo{
+    color: black;
+    line-height: 24px;
+    margin: 40px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+.reserva-parrafo p {
+    margin-bottom: 20px;
+}
+
+.reserva-parrafo_log{
+    color: black;
+    line-height: 24px;
+    margin: 40px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    width: 70%;
+}
+
+.reserva-parrafo_log strong {
+    margin: 10px 0; 
+}
+
+.reserva-form {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 2px solid #99678e;
+    border-radius: 10px;
+    display: block;
+    margin: 80px 20px 10px 80px;
+    -moz-box-shadow: 0px -1px 33px rgb(32, 31, 31);
+    -webkit-box-shadow: 0px -1px 33px rgb(41, 39, 39);
+    box-shadow: 0px -1px 33px rgb(36, 34, 34);
+    font-family: 'Mulish', sans-serif;
+     
+ }
+ 
+ .title-reserva h2{
+     margin: 20px 0 60px 0;
+     color: #B6075F;
+     
+ }
+ 
+ .body-reserva-form input {
+     width: 100%;
+     margin: 5px 0;
+     height: 40px;
+ }
+.body-reserva-form select {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+}
+ 
+ .body-reserva-form label {
+     color: #B6075F;
+     margin-top: 10px;
+ }
+ 
+ .body-reserva-form button[type='submit'] {
+     background-color: #b6075f;
+     color: #ceedee;
+     width: 200px;
+     height: 50px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+     margin-top: 20px;
+     
+ }
+ 
+
+
+/*QUIENES SOMOS,TERAPIA EN FAMILIA Y LOGOPEDIA A TRAVÉS DEL JUEGO*/
+
+.body-menu-somos{
+    background-image: url('../images/quienes1.png');
+    background-color: rgb(100, 100, 100);
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    top: 0;
+}
+
+
+.body-menu-somos .banner{
+    max-width: 800px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-menu-somos .banner .teraphy {
+    margin-top: auto;
+ }
+
+.body-menu-somos .banner .teraphy h1 {
+    color: #fff;
+    font-size: 54px;
+    letter-spacing: 0.25em;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.body-menu-somos .banner .teraphy p {
+    color: #fff;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    z-index: 2;
+}
+
+.quienessomos {
+    display: flex;
+    padding: 80px 0px 40px 150px;
+    
+}
+
+.teraphy_pag  {
+    display: flex;
+    padding: 80px 0px 100px 80px;
+    
+    
+}
+
+.teraphy_pag img {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    
+}
+
+.info-terapia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.info-terapia p {
+    margin-top: 55px;
+    max-width: 80%;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-left: 40px;
+    text-align: justify;
+    color: grey;
+}
+
+
+.info-juego {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    color: grey;
+    
+}
+
+.info-juego p {
+    margin-top: 40px;
+    max-width: 80%;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-left: 40px;
+    text-align: justify;
+    color: grey;
+   
+}
+
+.text-juego {
+    margin-top: 82px;
+    letter-spacing: 1px;
+    font-size: 28px; 
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+
+.frase_juego  p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-size: 28px; 
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+.lista_juego {
+    padding-left: 80px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 90px;
+    color: grey;
+}
+
+.lista_juego p{
+    margin-bottom: 30px;
+}
+
+.lista_juego li{
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.equipo {
+    font-size: 30px;
+    color: #777;;
+    font-family: "Monserrat", sans-serif;
+}
+
+.equipo h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 600px;
+   
+}
+
+.info-somos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.info-somos p {
+    margin-bottom: 30px;
+    max-width: 80%;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.conoceequipo {
+   display: flex;
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/equipo4.png);
+   background-attachment: fixed;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 400px;
+   padding-bottom: 30px;
+}
+
+
+.conoceequipo .banner {
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conoceequipo .banner h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 65px;
+    letter-spacing: 5px;
+
+}
+
+.fondo-irene {
+    width: 100%;
+    height: 900px;
+    border: solid 50px rgb(151, 145, 145);
+    border-bottom-right-radius: 900px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.equipo-irene {
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 50px;
+    
+   
+}
+
+.img-irene {
+   background-image: url(../images/ireneAlegra.JPG);
+   background-size: 100% 100%;
+   width: 40%;
+   height: 590px;
+   margin: 30px 50px;
+   
+}
+
+.info-irene {
+    max-width: 700px;
+}
+
+.info-irene h3 {
+    color: grey;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.info-irene p {
+    color: grey;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+/*MATERIALES DIDÁCTICOS*/
+
+.body-menu-material {
+    background-image: url('../images/materiales.png');
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    top: 0;
+}
+
+.body-menu-material .banner{
+    max-width: 800px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-menu-material .banner .teraphy {
+    margin-top: auto;
+    
+ }
+
+.body-menu-material .banner .teraphy h1 {
+    color: #fff;
+    font-size: 54px;
+    letter-spacing: 0.25em;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.flex-materials {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url(../images/fondocompras.png);
+    background-attachment: fixed;
+    
+}
+
+.box-materials {
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px -1px 8px 12px rgb(95 95 87);
+    margin-bottom: 50px;
+   
+}
+
+
+.box-materials a img {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+
+.box-materials:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in; 
+}
+
+
+
+.box-materials p {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(62, 57, 65, 0.637);
+    font-size: 15px;
+}
+
+
+/*MY SPACE*/
+
+.space-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+
+.menu-admin a img {
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu-admin p {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #4eb1ad;
+    
+}
+
+
+/*datatable*/
+
+.nomusu {
+    color: #1a5e60;
+    margin-left: 1050px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Síguenos*/
+
+.sig {
+    background-image: url(../images/fondosiguenos.png);
+}
+
+.siguenos-sec {
+    border-top: 1px solid gainsboro;
+}
+
+.siguenos {
+    display: flex;
+    justify-content: center;
+}
+
+.siguenos-sec strong {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin: 50px 0px;
+    color: #dd6094;
+    letter-spacing: 10px;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.siguenos ion-icon {
+    width: 200px;
+    height: 200px;
+    color:#dd6094;
+    margin: 100px 65px ;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background-color: #4eb1ad;
+   
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.box-footer .logo img {
+    width: 200px;
+}
+
+.box-footer a {
+    margin-top: 10px;
+    color:  #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box-footer a:hover {
+    opacity: 0.8;
+}
+
+.box-footer-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.contact-footer h2 {
+    margin-top: 10px;
+    color:  #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icons-footer a {
+    margin-left: 10px;
+}
+
+.icons-footer a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    background-color: #fff;
+    width: 100%;
+    color: black;
+   
+}
+
+.copyright p {
+    margin-left: 80px;
+}
+
+
+.icons-footer  ion-icon {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+
+
